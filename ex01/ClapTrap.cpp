@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 17:04:30 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/16 10:36:57 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/16 11:03:14 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,38 @@ ClapTrap::~ClapTrap() {
 
 std::string ClapTrap::getName() const {
 	return this->_name;
+}
+
+unsigned int ClapTrap::getHitPoints() const {
+	return this->_hitPoints;
+}
+
+unsigned int ClapTrap::getEnergyPoints() const {
+	return this->_energyPoints;
+}
+
+void ClapTrap::decrementEnergyPoints() {
+	_energyPoints--;
+}
+
+unsigned int ClapTrap::getAttackDamage() const {
+	return this->_attackDamage;
+}
+
+void ClapTrap::setName(std::string name) {
+	_name = name;
+}
+
+void ClapTrap::setHitPoints(unsigned int amount) {
+	_hitPoints = amount;
+}
+
+void ClapTrap::setEnergyPoints(unsigned int amount) {
+	_energyPoints = amount;
+}
+
+void ClapTrap::setAttackDamage(unsigned int amount) {
+	_attackDamage = amount;
 }
 
 void ClapTrap::attack(const std::string &target) {
