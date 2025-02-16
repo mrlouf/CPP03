@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 17:03:45 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/16 13:12:32 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/16 15:53:24 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 int	main()
 {
-	{
 	ScavTrap A("Robochiotte");
 
 	ScavTrap B("Moulipute");
@@ -36,13 +35,13 @@ int	main()
 	std::cout << clone << " has " << clone.getEnergyPoints() << " Energy points left" << std::endl;
 	clone.attack("Normiprout");
 	std::cout << clone << " has " << clone.getEnergyPoints() << " Energy Points left" << std::endl;
-/*
-	for (int i = 0; i < 10; i++) {
-	A.takeDamage(8);
-	}
 
-*/
-	}
+	A.takeDamage(8);
+	A.beRepaired(5);
+
+	ClapTrap C;
+	C.attack("Normiprout");
+	C.beRepaired(4);
 
 	return (0);
 }

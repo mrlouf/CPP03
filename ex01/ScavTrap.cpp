@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 10:22:43 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/16 13:11:10 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/16 15:49:21 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other) {
 }
 
 void ScavTrap::attack(std::string target) {
-		switch (_energyPoints == 0) {
+		switch (_energyPoints == 0 || _hitPoints == 0) {
 	case true:
 		std::cout << "ScavTrap " << _name << " does not have enough energy to attack!";
 		std::cout << std::endl;

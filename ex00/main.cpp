@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 17:03:45 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/16 10:18:38 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/16 15:33:45 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@ int	main()
 	{
 	ClapTrap A("Robochiotte");
 
-	for (int i = 0; i < 5; i++) {
+	for (int i = 0; i < 8; i++) {
 	A.attack("Moulinette");
 	}
 	
-	for (int i = 0; i < 2; i++) {
+	for (int i = 0; i < 4; i++) {
 	A.beRepaired(8);
 	}
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 4; i++) {
 	A.takeDamage(8);
 	}
 	}

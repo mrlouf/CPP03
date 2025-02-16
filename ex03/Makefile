@@ -6,7 +6,7 @@ NAME 		= DiamondTrap
 
 CC			= c++
 FLAGS		= -Werror -Wall -Wextra -std=c++98 \
-			-Wshadow -Wno-shadow -pedantic -fsanitize=address -fsanitize=leak
+			-Wshadow -pedantic -fsanitize=address -fsanitize=leak
 
 # -=-=-=-=-    PATH -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- #
 

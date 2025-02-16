@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 17:03:45 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/16 15:14:35 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/16 16:41:09 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int	main()
 		DiamondTrap D = DiamondTrap("Diamond1"); 
 		D.whoAmI();
 		D.attack("Moulinette");
+		D.highFivesGuys();
+		D.guardGate();
 
 	}
 

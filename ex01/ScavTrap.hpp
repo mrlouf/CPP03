@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 10:19:31 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/16 10:57:34 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/16 16:36:22 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class ScavTrap : public ClapTrap {
    		ScavTrap &operator=(const ScavTrap &other);
 		~ScavTrap();
 
-		void attack(std::string targer);
+		void attack(std::string target);
 
 		void guardGate();
 };
