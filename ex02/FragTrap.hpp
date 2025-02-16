@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 11:52:47 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/16 12:13:10 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/16 13:31:52 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ class FragTrap : public ClapTrap {
 
 	public:
 		FragTrap();
+		FragTrap(std::string name);
 		FragTrap(const FragTrap &other);
 		FragTrap &operator=(const FragTrap &other);
 		~FragTrap();
