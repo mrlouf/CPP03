@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 10:22:43 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/16 13:11:10 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/16 12:28:27 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,10 @@ ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other) {
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &other) {
 	if (this != &other) {
-		ClapTrap::operator=(other);
+		_name = other._name;
+		_hitPoints = other._hitPoints;
+		_energyPoints = other._energyPoints;
+		_attackDamage = other._attackDamage;
 		std::cout << "ScavTrap " << _name << " successfully cloned!" << std::endl;
 	}
 	return *this;
