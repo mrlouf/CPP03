@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 17:03:45 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/17 13:08:33 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/17 14:10:05 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@
 int	main()
 {
 	ScavTrap A("Robochiotte");
-
 	ScavTrap B("Moulipute");
-
 
 	for (int i = 0; i < 2; i++) {
 	A.attack("Moulipute");

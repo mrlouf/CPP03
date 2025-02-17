@@ -6,7 +6,7 @@
 /*   By: nponchon <nponchon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 10:22:43 by nponchon          #+#    #+#             */
-/*   Updated: 2025/02/16 12:28:27 by nponchon         ###   ########.fr       */
+/*   Updated: 2025/02/17 14:20:17 by nponchon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,30 +52,26 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other) {
 }
 
 void ScavTrap::attack(std::string target) {
-		switch (_energyPoints == 0) {
-	case true:
+	if (_energyPoints == 0) {
 		std::cout << "ScavTrap " << _name << " does not have enough energy to attack!";
 		std::cout << std::endl;
-		break;
-	case false:
+	}
+	else {
 		std::cout << "ScavTrap " << _name << " attacks " << target;
 		std::cout << " causing " << _attackDamage << " points of damage!";
 		std::cout << std::endl;
 		_energyPoints--;
-		break;
 	}
 }
 
 void ScavTrap::guardGate() {
-	switch (_guarding) {
-		case true:
-			_guarding = false;
-			std::cout << "ScavTrap " << _name << " leaving Gate Keeper mode!" << std::endl;
-			break;
-		case false:
-			_guarding = true;
-			std::cout << "ScavTrap " << _name << " entering Gate Keeper mode!" << std::endl;
-			break;
+	if (_guarding) {
+		_guarding = false;
+		std::cout << "ScavTrap " << _name << " leaving Gate Keeper mode!" << std::endl;
+	}
+	else {
+		_guarding = true;
+		std::cout << "ScavTrap " << _name << " entering Gate Keeper mode!" << std::endl;
 	}
 }
 
